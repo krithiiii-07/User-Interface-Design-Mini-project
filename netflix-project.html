@@ -91,5 +91,17 @@
                     </div>
                 </div>
             </div>
+        <script>
+        document.querySelector('.btn').addEventListener('click', function() {
+            var email = prompt('Enter your email:');
+                    if (!email.includes('@') || !email.includes('.')) {
+        alert('Invalid email! Please enter a valid email address.');
+        return;
+        }
+            var password = prompt('Enter your password:');
+            var username = prompt('Enter your username')
+            alert('Welcome! Logged in as: ' + username);
+        });
+        </script>
     </body>
 </html>
